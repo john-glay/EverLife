@@ -1,0 +1,171 @@
+@use "../sass/variables/colors" as *;
+@use "../sass/variables/variables" as *;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+
+    @media screen and (max-width: $tablet) {
+        font-size: 14px;
+    }
+
+    :focus-visible {
+        outline: none;
+    }
+}
+
+body {
+    background-image: url('../../images/background.jpg') !important;
+    background-size: 25% auto !important;
+    
+    @media screen and (max-width: $tablet) {
+        background-size: 50% auto !important;
+    }
+}
+
+/* User and Admin Page */
+.auth-base-user,
+.auth-base-admin {
+    animation: $animation-1;
+    background: $white;
+    border-radius: 20px;
+    box-shadow: $shadow-1;
+    height: fit-content;
+    inset: 0;
+    margin: auto;
+    padding: 30px;
+    position: fixed;
+    width: fit-content;
+
+    @media screen and (max-width: $tablet) {
+        border-radius: 10px;
+        padding: 15px;
+    }
+
+    .auth-img {
+        display: block;
+        height: 75px;
+        margin: auto;
+
+        @media screen and (max-width: $tablet) {
+            height: 50px;
+        }
+    }
+
+    .auth-welcome {
+        font-weight: map-get($font-weights, regular);
+        margin: 20px 0 30px 0;
+
+        @media screen and (max-width: $tablet) {
+            margin: 15px 0 25px 0;
+        }
+    }
+
+    .auth-admin {
+        font-weight: map-get($font-weights, bold);
+        margin: 15px 0;
+    }
+
+    .no-warning {
+        @include flexbox (flex, center, center);
+        height: 54.1px;
+        margin: 15px auto;
+        text-align: center;
+        width: 230px;
+
+        @media screen and (max-width: $tablet) {
+            height: 42.6px;
+        }
+    }
+
+    .register-warning {
+        display: none;
+        margin: 15px 0;
+        padding: 15px 20px !important;
+
+        @media screen and (max-width: $tablet) {
+            padding: 10px 15px !important;
+        }
+    }
+
+    .auth-label {
+        font-weight: map-get($font-weights, medium);
+        margin-bottom: 5px;
+
+        small {
+            color: $red;
+        }
+    }
+
+    .input-form {
+        background: $light-gray;
+        border: none;
+        border-radius: 5px;
+        margin-bottom: 15px;
+        padding: 12px 16px;
+        width: 350px;
+
+        @media screen and (max-width: $tablet) {
+            margin-bottom: 5px;
+            padding: 10px 14px;
+            width: 262.888px;
+        }
+    }
+
+    .auth-buttons {
+        @include flexbox (flex, center, space-between);
+        gap: 25px;
+        margin-top: 15px;
+
+        @media screen and (max-width: $tablet) {
+            gap: 15px;
+            margin-top: 10px;
+        }
+
+        .clear-btn {
+            background-color: $white;
+            border: 3px $green solid;
+            border-radius: 10px;
+            color: $green;
+            font-weight: map-get($font-weights, semi-bold);
+            padding: 12px 27px;
+            transition: $transition-1;
+
+            &:hover {
+                background: $green;
+                color: $white;
+                transition: $transition-1;
+            }
+
+            @media screen and (max-width: $tablet) {
+                border-radius: 5px;
+                padding: 7px 17px;
+            }
+        }
+        
+        .submit-btn {
+            background-color: $green;
+            border: none;
+            color: $white;
+            border-radius: 10px;
+            font-weight: map-get($font-weights, semi-bold);
+            padding: 15px 30px;
+            text-decoration: none;
+            transition: $transition-1;
+
+            &:hover {
+                background: $dark-green;
+                transition: $transition-1;
+            }
+
+            @media screen and (max-width: $tablet) {
+                border-radius: 5px;
+                padding: 10px 20px;
+            }
+        }
+    }
+}

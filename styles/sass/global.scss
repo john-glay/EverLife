@@ -1,0 +1,192 @@
+@use "../sass/variables/colors" as *;
+@use "../sass/variables/variables" as *;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+
+    @media screen and (max-width: $tablet) {
+        font-size: 14px;
+    }
+
+    :focus-visible {
+        outline: none;
+    }
+}
+
+@media screen and (min-width: $desktop) {
+    body::-webkit-scrollbar { width: 20px; }
+    body::-webkit-scrollbar-track { background: $light-green; }
+
+    body::-webkit-scrollbar-thumb {
+        border: 5px solid $light-green;
+        background: rgba(99, 164, 0, 0.25);
+        border-radius: 20px;
+        box-shadow: inset 1px 1px 0 rgba(99, 164, 0, 0.2), 
+                    inset -1px -1px 0 rgba(99, 164, 0, 0.2);
+    }
+
+    body::-webkit-scrollbar-thumb:hover { background: rgba(99, 164, 0, 0.5); }
+    body::-webkit-scrollbar-button { height: 60px; }
+}
+
+body {
+    background: $light-green !important;
+
+    .global-container {
+        @include flexbox (flex, start, center);
+        gap: 30px;
+        margin: 60px auto;
+        min-width: 340px;
+    
+        @media screen and (max-width: $laptop) {
+            margin: 60px auto 100px auto;
+        }
+    
+        @media screen and (max-width: $phone) {
+            margin: 15px;
+        }
+    
+        .nav {
+            background: $white;
+            border: 1px solid $light-gray;
+            border-radius: 20px;
+            box-shadow: $shadow-2;
+            padding: 15px;
+        
+            @media screen and (min-width: $desktop) {
+                width: 180px;
+            }
+        
+            @media screen and (min-width: $laptop) {
+                position: sticky;
+                top: 60px;
+            }
+        
+            @media screen and (max-width: $laptop) {
+                background: hsla(90, 40%, 25%, 0.6);
+                backdrop-filter: blur(10px);
+                border: 1px solid hsla(90, 40%, 35%, 1);
+                border-radius: 20px 20px 0 0;
+                bottom: 0;
+                padding: 20px;
+                position: fixed;
+                width: 100%;
+                z-index: 2; //increase
+            }
+        
+            @media screen and (max-width: $phone) {
+                border-radius: 10px;
+                margin-bottom: 30px;
+                min-width: 308.4px;
+                padding: 20px 15px;
+                width: calc(100% - 60px);
+            }
+        
+            .nav-list {
+                margin: 0;
+                padding: 0;
+                list-style: none;
+        
+                @media screen and (max-width: $laptop) {
+                    @include flexbox (flex, center, center);
+                    flex-wrap: wrap;
+                    gap: 30px;
+                    width: 100%;
+                }
+        
+                @media screen and (max-width: $phone) {
+                    gap: 15px;
+                }
+        
+                .nav-item {
+                    border-radius: 10px;
+                    cursor: pointer;
+                    padding: 10px 15px;
+                    transition: $transition-1;
+        
+                    @media screen and (min-width: $laptop) {
+                        &:hover {
+                            background: $light-green;
+                            transition: $transition-1;
+                        }
+                    }
+        
+                    @media screen and (max-width: $laptop) {
+                        padding: 0;
+                    }
+        
+                    a {
+                        color: $black;
+                        display: block;
+                        text-decoration: none;
+        
+                        @media screen and (max-width: $laptop) {
+                            color: $light-green;
+                        }
+        
+                        span {
+                            margin-left: 10px;
+        
+                            @media screen and (max-width: $desktop) {
+                                display: none;
+                                margin-left: 5px;
+                            }
+                        }
+                    }
+                }
+        
+                .nav-item.active {
+                    @media screen and (min-width: $laptop) {
+                        background: $green;
+                    }
+        
+                    a {
+                        color: $white;
+                        font-weight: map-get($font-weights, semi-bold);
+        
+                        span {
+                            @media screen and (max-width: $laptop) {
+                                display: inline;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .main-content {
+            position: relative;
+            width: max-content;
+
+            .content {
+                animation: $animation-1;
+                background: $white;
+                border: 1px solid $light-gray;
+                border-radius: 20px;
+                box-shadow: $shadow-2;
+                height: auto; //100vh
+                padding: 30px;
+                width: 900px;
+        
+                @media screen and (max-width: $laptop) {
+                    margin-inline: auto;
+                    width: 700px;
+                }
+        
+                @media screen and (max-width: $tablet) {
+                    width: 520px;
+                }
+        
+                @media screen and (max-width: $phone) {
+                    padding: 15px 15px 92.6px 15px;
+                    width: 100%; //auto
+                }
+            }
+        }
+    }
+}

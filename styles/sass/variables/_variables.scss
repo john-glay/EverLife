@@ -1,0 +1,58 @@
+@use "../variables/colors" as *;
+
+// SCREEN SIZES
+$phone: 580px;
+$tablet: 768px;
+$laptop: 1055px;
+$desktop: 1250px;
+
+// FONT-WEIGHTS
+$font-weights: (
+    "light": 300,
+    "regular": 400,
+    "medium": 500,
+    "semi-bold": 600,
+    "bold": 700,
+    "extra-bold": 800,
+    "black": 900
+);
+
+// TRANSITION
+$transition-1: all 0.3s ease-in-out;
+
+// ANIMATION
+$animation-1: fade 0.5s ease backwards;
+
+@keyframes fade {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+// MIXINS
+@mixin flexbox ($display, $align, $justify) {
+    display: $display;
+    align-items: $align;
+    justify-content: $justify;
+}
+
+@mixin card {
+    background: $gradient-1;
+    box-shadow: $shadow-3;
+    position: relative;
+    z-index: 1;
+}
+
+@mixin bg-card {
+    background: $gradient-2;
+    border-radius: inherit;
+    content: "";
+    inset: 1px;
+    position: absolute;
+    z-index: -1;
+}
+
+@mixin no-text-select {
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+}

@@ -1,0 +1,437 @@
+@use "../sass/variables/colors" as *;
+@use "../sass/variables/variables" as *;
+@import "../sass/global.scss";
+
+.content {
+    .title {
+        font-size: 32px;
+        font-weight: map-get($font-weights, extra-bold);
+        margin-bottom: 0;
+        padding-bottom: 15px;
+        position: relative;
+        
+        @media screen and (max-width: $tablet) {
+            margin-bottom: 15px;
+        }
+        
+        @media screen and (max-width: $phone) {
+            font-size: 24px;
+            padding-bottom: 10px;
+        }
+
+        &::after {
+            background: $green;
+            border-radius: 5px;
+            bottom: 0;
+            content: "";
+            left: 0;
+            height: 5px;
+            position: absolute;
+            width: 30px;
+        }
+    }
+
+    .sub-title {
+        font-size: 24px;
+        font-weight: map-get($font-weights, bold);
+        margin-bottom: 15px;
+        
+        @media screen and (max-width: $phone) {
+            font-size: 18px;
+        }
+    }
+
+    .home-info {
+        @include flexbox (flex, center, center);
+        gap: 50px;
+        margin: 0 30px;
+
+        @media screen and (max-width: $laptop) {
+            gap: 35px;
+            margin: 0;
+        }
+
+        @media screen and (max-width: $phone) {
+            display: block;
+        }
+
+        &:first-child {
+            @media screen and (min-width: $tablet) {
+                p::before {
+                    color: hsl(84deg 100% 32% / 50%);
+                    content: "Your Partner in Health";
+                    display: block;
+                    font-size: 22px;
+                    font-weight: 800;
+                    margin-bottom: 8px;
+                }    
+            }
+
+            @media screen and (min-width: $laptop) {
+                p::before {
+                    font-size: 27px;
+                    margin-bottom: 10px;
+                }
+            }
+
+            @media screen and (max-width: $tablet) {
+                gap: 15px;
+            }
+        }
+
+        &:last-child {
+            flex-direction: row-reverse;
+            margin-bottom: 30px;
+
+            @media screen and (max-width: $tablet) {
+                margin: 30px 0;
+                gap: 30px;
+            }
+
+            @media screen and (max-width: $phone) {
+                margin: 15px 0;
+            }
+        }
+
+        .home-text {
+            margin-bottom: 40px;
+
+            @media screen and (max-width: $laptop) {
+                margin-bottom: 35px;
+            }
+
+            @media screen and (max-width: $tablet) {
+                margin-bottom: 30px;
+            }
+
+            @media screen and (max-width: $phone) {
+                margin-bottom: 25px;
+            }
+        }
+
+        .apply-btn,
+        .learn-btn {
+            border-radius: 10px;
+            font-weight: map-get($font-weights, semi-bold);
+            text-decoration: none;
+            transition: $transition-1;
+
+            &:hover {
+                transition: $transition-1;
+            }
+
+            @media screen and (max-width: $tablet) {
+                border-radius: 5px;
+            }
+
+        }
+
+        .apply-btn {
+            background-color: $green;
+            border: none;
+            color: $white;
+            padding: 15px 30px;
+            transition: $transition-1;
+
+            &:hover {
+                background: $dark-green;
+            }
+
+            @media screen and (max-width: $tablet) {
+                padding: 10px 20px;
+            }
+        }
+
+        .learn-btn {
+            background-color: $white;
+            border: 3px $green solid;
+            color: $green;
+            padding: 12px 27px;
+
+            &:hover {
+                background: $green;
+                color: $white;
+            }
+
+            @media screen and (max-width: $tablet) {
+                padding: 7px 17px;
+            }
+        }
+
+        .home-img {
+            display: block;
+            margin: 0;
+            height: 350px;
+
+            @media screen and (max-width: $laptop) {
+                height: 325px;
+            }
+
+            @media screen and (max-width: $tablet) {
+                height: 200px;
+            }
+
+            @media screen and (max-width: $phone) {
+                margin: auto;
+                height: 250px;
+            }
+        }
+    }
+
+    .home-contact {
+        background: $light-gray;
+        border-radius: 15px;
+        display: grid;
+        gap: 18px;
+        grid-template-columns: repeat(3, 1fr);
+        padding: 20px;
+        
+        @media screen and (max-width: $laptop) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        
+        @media screen and (max-width: $tablet) {
+            gap: 15px;
+            padding: 15px;
+        }
+        
+        @media screen and (max-width: $phone) {
+            display: block;
+            padding: 10px;
+        }
+
+        .contact-item {
+            @include flexbox (flex, start, start);
+            margin: 0;
+
+            @media screen and (min-width: $laptop) {
+                &:nth-child(2),
+                &:nth-child(3) {
+                    height: 50px;
+                }
+
+                &:nth-child(3) {
+                    grid-column: 2;
+                    position: relative;
+                    top: 18px;
+                }
+
+                &:nth-child(5) {
+                    grid-column: 3;
+                }
+
+                &:last-child {
+                    grid-column: 3;
+                    grid-row: 1;
+                }
+            }
+
+            @media screen and (max-width: $laptop) {
+                &:first-child {
+                    grid-row: 3;
+                }
+
+                &:nth-child(4),
+                &:nth-child(5) {
+                    grid-row: 1;
+                }
+            }
+
+            @media screen and (max-width: $tablet) {
+                &:first-child {
+                    grid-row: 4;
+                }
+
+                &:nth-child(4),
+                &:nth-child(5) {
+                    grid-row: 2;
+                }
+
+                &:last-child {
+                    grid-column: span 2;
+                    grid-row: 1;
+                }
+            }
+
+            @media screen and (max-width: $phone) {
+                &:not(:last-child) {
+                    margin-bottom: 10px;
+                }
+            }
+
+            i {
+                @include flexbox (flex, center, center);
+                @include card;
+                color: $green;
+                border-radius: 12px;
+                font-size: 20px;
+                height: 48px;
+                width: 48px;
+        
+                @media screen and (max-width: $tablet) {
+                    border-radius: 8px;
+                    font-size: 16px;
+                    height: 40px;
+                    width: 40px;
+                }
+
+                &::after {
+                    @include bg-card;
+                }
+            }
+
+            .contact-info {
+                margin: 0 15px;
+            
+                @media screen and (max-width: $tablet) {
+                    margin: 0 0 0 15px;
+                }
+            
+                @media screen and (max-width: $phone) {
+                    margin: 0 0 0 12px;
+                }
+
+                p, a {
+                    color: $black;
+                    margin: 0;
+                    text-decoration: none;
+                }
+
+                p:first-child {
+                    color: $gray;
+                    font-size: 12px;
+                    margin: 5px 0 2px 0;
+                    font-weight: map-get($font-weights, medium);
+                    text-transform: uppercase;
+                    z-index: 1;
+            
+                    @media screen and (max-width: $tablet) {
+                        font-size: 10px;
+                        margin: 4px 0 0 0;
+                    }
+            
+                    @media screen and (max-width: $phone) {
+                        margin: 2px 0 0 0;
+                    }
+                }
+            }
+        }
+    }
+
+    .philhealth-logo {
+        display: none;
+
+        @media screen and (min-width: $laptop) {
+            bottom: 0;
+            display: block;
+            height: 60px;
+            left: 0;
+            margin: 40px;
+            position: absolute;
+        }
+    }
+}
+
+.modal {
+    background: rgba(0, 0, 0, 0.25) !important;
+
+    @media screen and (max-width: 370px) {
+        background: $light-green !important;
+    }
+
+    .modal-dialog {
+        min-width: 310px;
+
+        @media screen and (max-width: $tablet) {
+            width: 460px !important;
+        }
+
+        @media screen and (max-width: $phone) {
+            margin: auto 30px !important;
+            padding: 30px 0 !important;
+            width: auto !important;
+        }
+
+        .modalContent {
+            background: $white;
+            background-clip: padding-box;
+            border-radius: 10px;
+            color: $black;
+            display: flex;
+            flex-direction: column;
+            pointer-events: auto;
+            position: relative;
+            outline: 0;
+            width: 100%;
+        
+            @media screen and (max-width: 370px) {
+                box-shadow: $shadow-1 !important;
+            }
+        
+            .modalBody {
+                padding: 20px;
+        
+                @media screen and (max-width: $tablet) {
+                    padding: 15px;
+                }
+        
+                .modal-close-btn {
+                    cursor: pointer;
+                    font-size: 20px;
+                }
+        
+                .modal-title {
+                    @include flexbox (flex, center, start);
+                    gap: 10px;
+                    margin-left: 20px;
+        
+                    @media screen and (max-width: $tablet) {
+                        gap: 5px;
+                        margin-left: 15px;
+                    }
+        
+                    i, h4 {
+                        font-size: 24px;
+                        font-weight: map-get($font-weights, semi-bold);
+                        margin: 0;
+        
+                        @media screen and (max-width: $tablet) {
+                            font-size: 18px;
+                        }
+                    }
+                }
+        
+                .modal-text {
+                    margin: 20px;
+        
+                    @media screen and (max-width: $tablet) {
+                        margin: 15px;
+                    }
+                }
+        
+                .modalClose {
+                    background-color: $green;
+                    border: none;
+                    border-radius: 10px;
+                    color: $white;
+                    display: block;
+                    font-weight: map-get($font-weights, semi-bold);
+                    margin-left: auto;
+                    padding: 15px 30px;
+                    text-decoration: none;
+                    transition: $transition-1;
+        
+                    &:hover {
+                        background: $dark-green;
+                        transition: $transition-1;
+                    }
+        
+                    @media screen and (max-width: $tablet) {
+                        border-radius: 5px;
+                        padding: 10px 20px;
+                    }
+                }
+            }
+        }
+    }
+}

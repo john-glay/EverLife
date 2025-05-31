@@ -1,0 +1,333 @@
+@use "../sass/variables/colors" as *;
+@use "../sass/variables/variables" as *;
+@import "../sass/global.scss";
+
+.tables {
+    align-items: center;
+    background: $light-gray;
+    border: 2px solid $white;
+    border-radius: 0px 20px 0px 20px;
+    display: flex;
+    gap: 15px;
+    padding: 15px 30px;
+    position: absolute;
+    right: 1px;
+    top: 1px;
+    z-index: 1;
+    
+    @media screen and (max-width: $tablet) {
+        border-radius: 20px 20px 0px 0px;
+        justify-content: center;
+        left: 0;
+    }
+
+    a {
+        color: $gray;
+        font-weight: map-get($font-weights, semi-bold);
+        padding: 0 15px;
+        text-decoration: none;
+
+        @media screen and (max-width: $tablet) {
+            padding: 0 10px;
+        }
+
+        &.active {
+            color: $green;
+        }
+    }
+}
+
+.content {
+    position: relative;
+
+    .title {
+        font-size: 32px;
+        font-weight: map-get($font-weights, extra-bold);
+        margin-bottom: 30px;
+        padding-bottom: 15px;
+        position: relative;
+        
+        @media screen and (max-width: $tablet) {
+            margin-top: 43px;
+            margin-bottom: 15px;
+        }
+        
+        @media screen and (max-width: $phone) {
+            font-size: 24px;
+            margin-top: 48px;
+            padding-bottom: 10px;
+        }
+
+        &::after {
+            background: $green;
+            border-radius: 5px;
+            bottom: 0;
+            content: "";
+            left: 0;
+            height: 5px;
+            position: absolute;
+            width: 30px;
+        }
+    }
+
+    .sub-title {
+        font-size: 24px;
+        font-weight: map-get($font-weights, bold);
+        margin-bottom: 15px;
+        
+        @media screen and (max-width: $phone) {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+    }
+
+    .sql-statement {
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
+
+        .sql-codes {
+            border: 1px solid $gray;
+            border-radius: 15px;
+            margin-bottom: 15px;
+            padding: 15px 20px;
+        
+            @media screen and (max-width: $tablet) {
+                border-radius: 10px;
+            }
+
+            b {
+                color: $green;
+                font-weight: map-get($font-weights, semi-bold);
+            }
+        }
+
+        .sql-output {
+            overflow: auto;
+            min-width: 308.4px;
+
+            &::-webkit-scrollbar {
+                height: 9px;
+            }
+            
+            &::-webkit-scrollbar-button {
+                display: none;
+            }
+            
+            &::-webkit-scrollbar-track {
+                background: $light-gray;
+                border-radius: 9px;
+            }
+            
+            &::-webkit-scrollbar-thumb {
+                background: $gray;
+                border-radius: 9px;
+            }
+            
+            &::-webkit-scrollbar-thumb:hover {
+                background: #555555;
+            }
+            
+            @media screen and (max-width: $tablet) {
+                &::-webkit-scrollbar {
+                    height: 5px;
+                }
+            
+                &::-webkit-scrollbar-track,
+                &::-webkit-scrollbar-thumb {
+                    border-radius: 5px;
+                }
+            }
+            
+            @media screen and (max-width: $phone) {
+                width: calc($phone - 60px);
+            }
+    
+            .sql-label {
+                border-bottom: 1px solid $gray;
+                border-top: 1px solid $gray;
+                font-weight: map-get($font-weights, medium);
+            }
+
+            .sql-label,
+            .sql-info {
+                display: grid;
+                grid-gap: 30px;
+                padding-left: 30px;
+                width: fit-content;
+            
+                @media screen and (max-width: $tablet) {
+                    gap: 20px;
+                    grid-gap: 20px;
+                    padding-left: 20px;
+                }
+
+                label,
+                p {
+                    display: -webkit-box;
+                    -webkit-line-clamp: 2;
+                    -webkit-box-orient: vertical;
+                    align-self: center;
+                    box-orient: vertical;
+                    line-clamp: 2;
+                    line-height: 1;
+                    margin: 10px 0;
+                    max-height: 50px;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    word-break: break-word;
+                }
+
+                &.simple-1 {
+                    grid-template-columns: 120px 95px 150px 125px 125px 170px 100px 0;
+                
+                    @media screen and (max-width: $tablet) {
+                        grid-template-columns: 110px 90px 125px 120px 120px 160px 100px 0;
+                    }
+                }
+
+                &.simple-2 {
+                    grid-template-columns: 120px 150px 167px 150px 150px 150px 100px 120px 120px 150px 150px 150px 150px 150px 150px 150px 150px 120px 150px 150px 150px 150px 150px 150px 150px 0;
+        
+                    @media screen and (max-width: $tablet) {
+                        grid-template-columns: 110px 125px 165px 125px 125px 125px 50px 100px 100px 125px 125px 125px 125px 130px 125px 145px 125px 100px 125px 125px 125px 125px 125px 125px 125px 0;
+                    }
+                }
+
+                &.moderate-1 {
+                    grid-template-columns: 100px 250px 0;
+
+                    @media screen and (max-width: $tablet) {
+                        grid-template-columns: 90px 230px 0;
+                    }
+
+                    @media screen and (min-width: 421px) {
+                        width: 100%;
+                    }
+                }
+
+                &.moderate-2 {
+                    grid-template-columns: 120px 200px 0;
+
+                    @media screen and (max-width: $tablet) {
+                        grid-template-columns: 110px 180px 0;
+                    }
+
+                    @media screen and (min-width: 421px) {
+                        width: 100%;
+                    }
+                }
+
+                &.moderate-3 {
+                    grid-template-columns: 50px 255px 0;
+
+                    @media screen and (max-width: $tablet) {
+                        grid-template-columns: 40px 240px 0;
+                    }
+
+                    @media screen and (min-width: 421px) {
+                        width: 100%;
+                    }
+                }
+
+                &.moderate-4 {
+                    grid-template-columns: 100px 200px 0;
+
+                    @media screen and (max-width: $tablet) {
+                        grid-template-columns: 70px 175px 0;
+                    }
+
+                    @media screen and (min-width: 421px) {
+                        width: 100%;
+                    }
+                }
+
+                &.difficult-1 {
+                    grid-template-columns: 120px 150px 95px 150px 0;
+
+                    @media screen and (max-width: $tablet) {
+                        grid-template-columns: 110px 125px 95px 125px 0;
+                    }
+
+                    @media screen and (min-width: $tablet) {
+                        width: 100%;
+                    }
+                }
+
+                &.difficult-2 {
+                    grid-template-columns: 50px 170px 220px 225px 0;
+
+                    @media screen and (max-width: $tablet) {
+                        grid-template-columns: 40px 160px 205px 205px 0;
+                    }
+
+                    @media screen and (min-width: $laptop) {
+                        width: 100%;
+                    }
+                }
+
+                &.difficult-3 {
+                    grid-template-columns: 120px 190px 0;
+
+                    @media screen and (max-width: $tablet) {
+                        grid-template-columns: 100px 175px 0;
+                    }
+
+                    @media screen and (min-width: 395px) {
+                        width: 100%;
+                    }
+                }
+            }    
+        }
+
+        .no-record {
+            border: 1px solid $gray;
+            border-radius: 15px;
+            position: relative;
+        
+            @media screen and (max-width: $tablet) {
+                border-radius: 10px;
+            }
+
+            img {
+                display: block; 
+                height: 300px;
+                margin: 0 auto; 
+        
+                @media screen and (max-width: $tablet) {
+                    height: 200px;
+                }
+            }
+
+            p {
+                @include no-text-select;
+                bottom: 38px;
+                color: $gray;
+                font-weight: map-get($font-weights, light);
+                left: 0; 
+                margin: 0 auto; 
+                position: absolute;
+                right: 0; 
+        
+                @media screen and (max-width: $tablet) {
+                    bottom: 25px;
+                }
+            }
+        }
+    }
+
+    .philhealth-logo {
+        display: none;
+
+        @media screen and (min-width: $tablet) {
+            display: block;
+            height: 60px;
+            margin: 30px auto 10px auto;
+            width: 163.887px;
+        }
+
+        img {
+            height: 100%;
+        }
+    }
+}

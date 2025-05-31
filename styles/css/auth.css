@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap");
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+* {
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+}
+@media screen and (max-width: 768px) {
+  * {
+    font-size: 14px;
+  }
+}
+* :focus-visible {
+  outline: none;
+}
+
+body {
+  background-image: url("../../images/background.jpg") !important;
+  background-size: 25% auto !important;
+}
+@media screen and (max-width: 768px) {
+  body {
+    background-size: 50% auto !important;
+  }
+}
+
+/* User and Admin Page */
+.auth-base-user,
+.auth-base-admin {
+  animation: fade 0.5s ease backwards;
+  background: #FFFFFF;
+  border-radius: 20px;
+  box-shadow: 0px 0px 20px 0px hsla(0, 0%, 50%, 0.5);
+  height: -moz-fit-content;
+  height: fit-content;
+  inset: 0;
+  margin: auto;
+  padding: 30px;
+  position: fixed;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+@media screen and (max-width: 768px) {
+  .auth-base-user,
+  .auth-base-admin {
+    border-radius: 10px;
+    padding: 15px;
+  }
+}
+.auth-base-user .auth-img,
+.auth-base-admin .auth-img {
+  display: block;
+  height: 75px;
+  margin: auto;
+}
+@media screen and (max-width: 768px) {
+  .auth-base-user .auth-img,
+  .auth-base-admin .auth-img {
+    height: 50px;
+  }
+}
+.auth-base-user .auth-welcome,
+.auth-base-admin .auth-welcome {
+  font-weight: 400;
+  margin: 20px 0 30px 0;
+}
+@media screen and (max-width: 768px) {
+  .auth-base-user .auth-welcome,
+  .auth-base-admin .auth-welcome {
+    margin: 15px 0 25px 0;
+  }
+}
+.auth-base-user .auth-admin,
+.auth-base-admin .auth-admin {
+  font-weight: 700;
+  margin: 15px 0;
+}
+.auth-base-user .no-warning,
+.auth-base-admin .no-warning {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 54.1px;
+  margin: 15px auto;
+  text-align: center;
+  width: 230px;
+}
+@media screen and (max-width: 768px) {
+  .auth-base-user .no-warning,
+  .auth-base-admin .no-warning {
+    height: 42.6px;
+  }
+}
+.auth-base-user .register-warning,
+.auth-base-admin .register-warning {
+  display: none;
+  margin: 15px 0;
+  padding: 15px 20px !important;
+}
+@media screen and (max-width: 768px) {
+  .auth-base-user .register-warning,
+  .auth-base-admin .register-warning {
+    padding: 10px 15px !important;
+  }
+}
+.auth-base-user .auth-label,
+.auth-base-admin .auth-label {
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+.auth-base-user .auth-label small,
+.auth-base-admin .auth-label small {
+  color: #DC3545;
+}
+.auth-base-user .input-form,
+.auth-base-admin .input-form {
+  background: #E7E8EA;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  padding: 12px 16px;
+  width: 350px;
+}
+@media screen and (max-width: 768px) {
+  .auth-base-user .input-form,
+  .auth-base-admin .input-form {
+    margin-bottom: 5px;
+    padding: 10px 14px;
+    width: 262.888px;
+  }
+}
+.auth-base-user .auth-buttons,
+.auth-base-admin .auth-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 25px;
+  margin-top: 15px;
+}
+@media screen and (max-width: 768px) {
+  .auth-base-user .auth-buttons,
+  .auth-base-admin .auth-buttons {
+    gap: 15px;
+    margin-top: 10px;
+  }
+}
+.auth-base-user .auth-buttons .clear-btn,
+.auth-base-admin .auth-buttons .clear-btn {
+  background-color: #FFFFFF;
+  border: 3px #63A400 solid;
+  border-radius: 10px;
+  color: #63A400;
+  font-weight: 600;
+  padding: 12px 27px;
+  transition: all 0.3s ease-in-out;
+}
+.auth-base-user .auth-buttons .clear-btn:hover,
+.auth-base-admin .auth-buttons .clear-btn:hover {
+  background: #63A400;
+  color: #FFFFFF;
+  transition: all 0.3s ease-in-out;
+}
+@media screen and (max-width: 768px) {
+  .auth-base-user .auth-buttons .clear-btn,
+  .auth-base-admin .auth-buttons .clear-btn {
+    border-radius: 5px;
+    padding: 7px 17px;
+  }
+}
+.auth-base-user .auth-buttons .submit-btn,
+.auth-base-admin .auth-buttons .submit-btn {
+  background-color: #63A400;
+  border: none;
+  color: #FFFFFF;
+  border-radius: 10px;
+  font-weight: 600;
+  padding: 15px 30px;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+}
+.auth-base-user .auth-buttons .submit-btn:hover,
+.auth-base-admin .auth-buttons .submit-btn:hover {
+  background: #487314;
+  transition: all 0.3s ease-in-out;
+}
+@media screen and (max-width: 768px) {
+  .auth-base-user .auth-buttons .submit-btn,
+  .auth-base-admin .auth-buttons .submit-btn {
+    border-radius: 5px;
+    padding: 10px 20px;
+  }
+}
