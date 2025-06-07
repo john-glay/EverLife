@@ -47,9 +47,9 @@
                 </header>
                 <section>
                     <div class="about-info">
-                        <p class="about-text">This project serves as a hands-on learning experience for applying SQL and information management principles to optimize the member application process for PhilHealth. The goal of the system is <mark>to streamline member registration, update processes, and enhance overall efficiency</mark> by utilizing database management techniques.</p>
+                        <p class="about-text">This project serves as a hands-on learning experience for applying web development principles to optimize the member application process for a fictional health insurance provider. The goal of the system is <mark>to streamline member registration, update processes, and enhance overall efficiency</mark> through web-based solutions.</p>
                         <img class="about-img" src="../images/collab.png" alt="collab" draggable="false">
-                        <p class="about-text">The project showcases the use of SQL queries to retrieve, update, and manage member data in a <mark>more organized and scalable manner.</mark> It reflects the practical application of database design, optimization, and user interface design to improve user experience.</p>
+                        <p class="about-text">The project showcases the use of HTML, CSS, JavaScript, and PHP to create, update, and manage member data in a <mark>more organized and user-friendly manner</mark>. It reflects the practical application of front-end and back-end development, database integration, and interface design to improve user experience.</p>
                     </div>
                 </section>
 
@@ -103,8 +103,8 @@
                             Disclaimer
                         </h3>
                     </div>
-                    <p class="m-0">This project is solely for educational and demonstration purposes as part of the COMP 010 – Information Management course. It is <b>NOT</b> affiliated with, endorsed by, or connected to the Philippine Health Insurance Corporation (PhilHealth) in any way. All trademarks, including the PhilHealth name, logo, and any related materials, are the property of their respective owners. The use of these materials in this project is intended for academic purposes only, to demonstrate the application of SQL statements and information management concepts. The information in the database is entirely fictional, and any resemblance to actual individuals, organizations, or events is purely coincidental. No commercial use or distribution of this project is intended.</p>
-                    <a href="admin-home.php"><img class="philhealth-logo" src="../images/logo-name.png" alt="logo" draggable="false"></a>
+                    <p class="m-0">This project is solely for educational and demonstration purposes as part of the COMP 016 – Web Development course. It is <b>NOT</b> affiliated with, endorsed by, or connected to any real health insurance provider. All trademarks, names, logos, and related materials are the property of their respective owners. The use of these materials in this project is intended for academic purposes only, to demonstrate the application of web development concepts. The information in the database is entirely fictional, and any resemblance to actual individuals, organizations, or events is purely coincidental. No commercial use or distribution of this project is intended.</p>
+                    <a href="admin-home.php"><img class="org-logo" src="../images/logo-name.png" alt="logo" draggable="false"></a>
                 </section>
             </div>      
         </div>

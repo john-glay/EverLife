@@ -481,11 +481,11 @@ body .global-container .main-content .content {
     font-size: 18px;
   }
 }
-.content .philhealth-logo {
+.content .org-logo {
   display: none;
 }
 @media screen and (min-width: 768px) {
-  .content .philhealth-logo {
+  .content .org-logo {
     bottom: 0;
     display: block;
     height: 35px;
