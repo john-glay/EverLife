@@ -222,7 +222,7 @@ if ( $_SERVER['REQUEST_METHOD'] == 'POST' ) {
                                         <li>For Direct Contributors, except employed, sea-based migrant workers and lifetime members, indicate the profession, monthly income and proof of income to be submitted</li>
                                         <li>For Self-earning individuals, Kasambahays and Family Drivers, indicate the actual monthly income in the space provided</li>
                                         <li>In declaring dependents, provide the full name of the living spouse, children below 21 years old, and parents who are 60 years old and above totally dependent to the member.</li>
-                                        <li>Dependents with disability shall be registered as principal members in accordance with Republic Act 11228 on mandatory PhilHealth coverage for all persons with disability (PWD).</li>
+                                        <li>Dependents with disabilities shall be registered as principal members in accordance with Republic Act 11228, which mandates health coverage for all persons with disabilities (PWDs).</li>
                                     </ol>
                                     <button type="button" class="modalClose" data-bs-dismiss="modal">Close</button>
                                 </div>
@@ -659,7 +659,7 @@ if ( $_SERVER['REQUEST_METHOD'] == 'POST' ) {
                                     <div class="modal-title">
                                         <h4>Congratulations!</h4>
                                     </div>
-                                    <p class="modal-text">Your PhilHealth registration has been <mark>successfully completed.</mark> If you have any questions, feel free to <a href="https://www.philhealth.gov.ph/" target="_blank">contact us.</a> Thank you!</p>
+                                    <p class="modal-text">Your EverLife registration has been <mark>successfully completed.</mark> If you have any questions, feel free to <a href="https://www.everlife.gov.ph/" target="_blank">contact us.</a> Thank you!</p>
                                     <button type="button" class="modalClose" data-bs-dismiss="modal">Close</button>
                                 </div>
                             </div>
