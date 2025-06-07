@@ -61,37 +61,49 @@
                 <section>
                     <div class="about-members" id="scrollContainer">
                         <div class="member">
+                            <p class="last-name">Alfaro,</p>
+                            <p>Abram S.</p>
+                            <div class="member-socials">
+                                <a href="" target="_blank"><i class="bi bi-github"></i></a>
+                                <a href="" target="_blank"><i class="bi bi-linkedin"></i></a>
+                            </div>
+                            <img class="member-img" src="../images/glay.png" alt="abram" draggable="false">
+                        </div>
+                        <div class="member">
                             <p class="last-name">Bunao,</p>
                             <p>John Glay C.</p>
                             <div class="member-socials">
                                 <a href="https://github.com/john-glay" target="_blank"><i class="bi bi-github"></i></a>
                                 <a href="https://www.linkedin.com/in/john-glay-bunao-8b5948255" target="_blank"><i class="bi bi-linkedin"></i></a>
                             </div>
-                            <img class="member-img" src="../images/glay.png" alt="matt" draggable="false">
+                            <img class="member-img" src="../images/glay.png" alt="glay" draggable="false">
                         </div>
                         <div class="member">
-                            <p class="last-name">Maravilla,</p>
-                            <p>Ernest Matthew I.</p>
+                            <p class="last-name">Damaso,</p>
+                            <p>Edriana Joy R.</p>
                             <div class="member-socials">
-                                <a href="https://www.linkedin.com/in/ernest-matt-maravilla" target="_blank"><i class="bi bi-linkedin"></i></a>
+                                <a href="" target="_blank"><i class="bi bi-github"></i></a>
+                                <a href="" target="_blank"><i class="bi bi-linkedin"></i></a>
                             </div>
-                            <img class="member-img" src="../images/matt.png" alt="rainiel" draggable="false">
+                            <img class="member-img" src="../images/glay.png" alt="edriana" draggable="false">
                         </div>
                         <div class="member">
-                            <p class="last-name">Ladiao,</p>
-                            <p>Raniel Josh D.</p>
+                            <p class="last-name">Dela Cruz</p>
+                            <p>Jhana Mae L.</p>
                             <div class="member-socials">
-                                <a href="https://www.linkedin.com/in/rainiel-josh-ladiao" target="_blank"><i class="bi bi-linkedin"></i></a>
+                                <a href="" target="_blank"><i class="bi bi-github"></i></a>
+                                <a href="" target="_blank"><i class="bi bi-linkedin"></i></a>
                             </div>
-                            <img class="member-img" src="../images/rainiel.png" alt="glay" draggable="false">
+                            <img class="member-img" src="../images/glay.png" alt="jhana" draggable="false">
                         </div>
                         <div class="member">
-                            <p class="last-name">Prudente,</p>
-                            <p>Lady Marah G.</p>
+                            <p class="last-name">Estrella</p>
+                            <p>Novelle Lyn</p>
                             <div class="member-socials">
-                                <a href="https://www.linkedin.com/in/marah-prudente-1079ab2b2" target="_blank"><i class="bi bi-linkedin"></i></a>
+                                <a href="" target="_blank"><i class="bi bi-github"></i></a>
+                                <a href="" target="_blank"><i class="bi bi-linkedin"></i></a>
                             </div>
-                            <img class="member-img" src="../images/marah.png" alt="glay" draggable="false">
+                            <img class="member-img" src="../images/glay.png" alt="novelle" draggable="false">
                         </div>
                     </div>
                 </section>

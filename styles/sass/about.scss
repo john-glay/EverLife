@@ -125,17 +125,20 @@
     }
 
     .about-members {
-        @include no-text-select;
-        cursor: grab;
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        display: flex;
+        flex-wrap: wrap;
         gap: 25px;
+        justify-content: center;
         margin-bottom: 30px;
         overflow: hidden;
 
         @media screen and (max-width: $laptop) {
-            grid-template-columns: repeat(2, 1fr);
             gap: 20px;
+        }
+
+        @media screen and (max-width: 580px) {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
         }
 
         @media screen and (max-width: $phone) {
@@ -153,12 +156,18 @@
             width: 262.8px;
 
             @media screen and (max-width: $laptop) {
-                width: auto;
+                width: 309.2px;
             }
 
             @media screen and (max-width: $tablet) {
                 height: 125px;
                 padding: 15px;
+                width: 219.2px;
+            }
+
+            @media screen and (max-width: 580px) {
+                height: 125px;
+                width: auto;
             }
 
             @media screen and (max-width: 515px) {

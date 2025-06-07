@@ -333,20 +333,22 @@ body .global-container .main-content .content {
   }
 }
 .content .about-members {
-  -webkit-user-select: none; /* Safari */ /* IE 10 and IE 11 */
-  -moz-user-select: none;
-       user-select: none; /* Standard syntax */
-  cursor: grab;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  display: flex;
+  flex-wrap: wrap;
   gap: 25px;
+  justify-content: center;
   margin-bottom: 30px;
   overflow: hidden;
 }
 @media screen and (max-width: 1055px) {
   .content .about-members {
-    grid-template-columns: repeat(2, 1fr);
     gap: 20px;
+  }
+}
+@media screen and (max-width: 580px) {
+  .content .about-members {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 @media screen and (max-width: 580px) {
@@ -366,13 +368,20 @@ body .global-container .main-content .content {
 }
 @media screen and (max-width: 1055px) {
   .content .about-members .member {
-    width: auto;
+    width: 309.2px;
   }
 }
 @media screen and (max-width: 768px) {
   .content .about-members .member {
     height: 125px;
     padding: 15px;
+    width: 219.2px;
+  }
+}
+@media screen and (max-width: 580px) {
+  .content .about-members .member {
+    height: 125px;
+    width: auto;
   }
 }
 @media screen and (max-width: 515px) {
