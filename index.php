@@ -14,7 +14,7 @@
 </head>
 <body>
     <div class="auth-base-user">
-        <img class="auth-img" src="images/logo-name.png" alt="philhealth-logo" draggable="false">
+        <img class="auth-img" src="images/logo-name.png" alt="logo-name" draggable="false">
         <p class="auth-welcome text-center">Welcome!</p>
         <div class="auth-buttons">
             <a class="submit-btn" href="user/user-home.php">User</a>

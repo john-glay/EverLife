@@ -59,7 +59,7 @@
             @media screen and (min-width: $tablet) {
                 p::before {
                     color: hsl(84deg 100% 32% / 50%);
-                    content: "Your Partner in Health";
+                    content: "Life, covered.";
                     display: block;
                     font-size: 22px;
                     font-weight: 800;
@@ -161,7 +161,7 @@
         .home-img {
             display: block;
             margin: 0;
-            height: 350px;
+            height: 351px;
 
             @media screen and (max-width: $laptop) {
                 height: 325px;
@@ -318,7 +318,7 @@
         }
     }
 
-    .philhealth-logo {
+    .org-logo {
         display: none;
 
         @media screen and (min-width: $laptop) {

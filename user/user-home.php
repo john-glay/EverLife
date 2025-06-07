@@ -37,20 +37,20 @@
         <div class="main-content">
             <div class="content">
                 <header>
-                    <h2 class="title">PhilHealth</h2>
+                    <h2 class="title">EverLife</h2>
                 </header>
                 <section>
                     <div class="home-info">
                         <div>
-                            <p class="home-text">The Philippine Health Insurance Corporation (PhilHealth) is a government-owned corporation responsible for ensuring that every Filipino citizen has <mark>access to affordable health care services.</mark></p>
+                            <p class="home-text">EverLife is a trusted health insurance provider dedicated to ensuring that every Filipino has access to <mark>reliable, comprehensive, and affordable health care services.</mark></p>
                             <a class="apply-btn" href="user-registration.php">Apply now</a>    
                         </div>
                         <img class="home-img" src="../images/family.png" alt="family" draggable="false">
                     </div>
                     <div class="home-info">
                         <div>
-                            <p class="home-text">Through its social health insurance program, <mark>PhilHealth provides financial support for inpatient and outpatient services</mark>, ensuring that members can access quality healthcare in public and private hospitals across the Philippines.</p>
-                            <a class="learn-btn" href="https://www.philhealth.gov.ph/services/" target="_blank">Learn more</a>    
+                            <p class="home-text">Through its health insurance program, <mark>EverLife provides financial assistance for inpatient and outpatient services</mark>, ensuring members access quality healthcare in public and private hospitals across the Philippines.</p>
+                            <a class="learn-btn" href="user-about.php">Learn more</a>    
                         </div>
                         <img class="home-img" src="../images/hospital.png" alt="hospital" draggable="false">
                     </div>
@@ -67,48 +67,48 @@
                             <i class="bi bi-telephone"></i>
                             <div class="contact-info">
                                 <p>New Hotline</p>
-                                <p>(02) 866-225-88</p>
+                                <p>(01) 432-765-98</p>
                             </div>
                         </div>
                         <div class="contact-item">
                             <i class="bi bi-phone"></i>
                             <div class="contact-info">
                                 <p>Smart</p>
-                                <p>0998-857-2957</p>
-                                <p>0968-865-4670</p>
+                                <p>0987-654-3210</p>
+                                <p>0901-234-5678</p>
                             </div>
                         </div>
                         <div class="contact-item">
                             <i class="bi bi-phone"></i>
                             <div class="contact-info">
                                 <p>Globe</p>
-                                <p>0917-127-5987</p>
-                                <p>0917-110-9812</p>
+                                <p>0912-543-9876</p>
+                                <p>0998-765-4321</p>
                             </div>
                         </div>
                         <div class="contact-item">
                             <i class="bi bi-facebook"></i>
                             <div class="contact-info">
                                 <p>Facebook</p>
-                                <a href="https://www.facebook.com/PhilHealthOfficial/" target="_blank">PhilHealthOfficial</a>
+                                <a href="https://www.facebook.com/EverLifeOfficial/" target="_blank">EverLifeOfficial</a>
                             </div>  
                         </div>
                         <div class="contact-item">
                             <i class="bi bi-twitter-x"></i>
                             <div class="contact-info">
                                 <p>X (formerly Twitter)</p>
-                                <a href="https://x.com/teamphilhealth/" target="_blank">@teamphilhealth</a>
+                                <a href="https://x.com/everlifeofficial/" target="_blank">@everlifeofficial</a>
                             </div>  
                         </div>
                         <div class="contact-item">
                             <i class="bi bi-envelope"></i>
                             <div class="contact-info">
                                 <p>Email</p>
-                                <p>actioncenter@philhealth.gov.ph</p>
+                                <p>actioncenter@everlife.gov.ph</p>
                             </div>  
                         </div>
                     </div>
-                    <a href="user-home.php"><img class="philhealth-logo" src="../images/logo-name.png" alt="logo" draggable="false"></a>
+                    <a href="user-home.php"><img class="org-logo" src="../images/logo-name.png" alt="logo" draggable="false"></a>
                 </section>
             </div>
         </div>
@@ -125,7 +125,7 @@
                             <i class="bi bi-info-circle"></i>
                             <h4>Disclaimer</h4>
                         </div>
-                        <p class="modal-text">This academic project is <b>NOT</b> affiliated with or endorsed by the Philippine Health Insurance Corporation (PhilHealth). All trademarks are the property of their respective owners. This project is <b>NOT</b> intended for commercial use or distribution.</p>
+                        <p class="modal-text">This academic project is <b>NOT</b> a real health insurance provider. All trademarks are the property of their respective owners. This project is <b>NOT</b> intended for commercial use or distribution.</p>
                         <button type="button" class="modalClose" data-bs-dismiss="modal">Close</button>
                     </div>
                 </div>

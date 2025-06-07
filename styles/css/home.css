@@ -275,7 +275,7 @@ body .global-container .main-content .content {
 @media screen and (min-width: 768px) {
   .content .home-info:first-child p::before {
     color: hsla(84, 100%, 32%, 0.5);
-    content: "Your Partner in Health";
+    content: "Life, covered.";
     display: block;
     font-size: 22px;
     font-weight: 800;
@@ -376,7 +376,7 @@ body .global-container .main-content .content {
 .content .home-info .home-img {
   display: block;
   margin: 0;
-  height: 350px;
+  height: 351px;
 }
 @media screen and (max-width: 1055px) {
   .content .home-info .home-img {
@@ -534,11 +534,11 @@ body .global-container .main-content .content {
     margin: 2px 0 0 0;
   }
 }
-.content .philhealth-logo {
+.content .org-logo {
   display: none;
 }
 @media screen and (min-width: 1055px) {
-  .content .philhealth-logo {
+  .content .org-logo {
     bottom: 0;
     display: block;
     height: 60px;

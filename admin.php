@@ -28,7 +28,7 @@
 <body>
     <form id="loginForm"> 
         <div class="auth-base-admin">
-            <img class="auth-img" src="images/logo-name.png" alt="philhealth-logo" draggable="false">
+            <img class="auth-img" src="images/logo-name.png" alt="logo-name" draggable="false">
             <p class="auth-admin text-center">ADMINISTRATOR</p>
             <div id="without-error" class='no-warning' role='alert'>
                 <p class='m-0'>Please enter the admin username and password.</p>
