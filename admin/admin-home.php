@@ -31,9 +31,6 @@
                     <a href="admin-members.php"><i class="bi bi-database"></i><span>Database</span></a>
                 </li>
                 <li class="nav-item">
-                    <a href="admin-simple.php"><i class="bi bi-code-slash"></i><span>SQL Codes</span></a>
-                </li>
-                <li class="nav-item">
                     <a href="../index.php"><i class="bi bi-box-arrow-right"></i><span>Exit</span></a>
                 </li>
             </ul>

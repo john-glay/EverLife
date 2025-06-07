@@ -663,8 +663,8 @@ if ( $_SERVER['REQUEST_METHOD'] == 'POST' ) {
                         </div>
                     </div>
                 </form>
-                <a href="user-home.php" class="philhealth-logo">
-                    <img src="../images/logo-name.png" alt="philhealth-logo" draggable="false">
+                <a href="user-home.php" class="org-logo">
+                    <img src="../images/logo-name.png" alt="org-logo" draggable="false">
                 </a>   
             </div>  
         </div>

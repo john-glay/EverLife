@@ -354,9 +354,6 @@ $total_count = $result->fetch_assoc()['total_count'];
                     <a href="admin-members.php"><i class="bi bi-database-fill"></i><span>Database</span></a>
                 </li>
                 <li class="nav-item">
-                    <a href="admin-simple.php"><i class="bi bi-code-slash"></i><span>SQL Codes</span></a>
-                </li>
-                <li class="nav-item">
                     <a href="../index.php"><i class="bi bi-box-arrow-right"></i><span>Exit</span></a>
                 </li>
             </ul>
@@ -740,8 +737,8 @@ $total_count = $result->fetch_assoc()['total_count'];
                         </div>
                     </div>
                 </section>
-                <a href="admin-home.php" class="philhealth-logo">
-                    <img src="../images/logo-name.png" alt="philhealth-logo" draggable="false">
+                <a href="admin-home.php" class="org-logo">
+                    <img src="../images/logo-name.png" alt="org-logo" draggable="false">
                 </a>  
             </div>
         </div>

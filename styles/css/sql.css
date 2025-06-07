@@ -554,17 +554,17 @@ body .global-container .main-content .content {
     bottom: 25px;
   }
 }
-.content .philhealth-logo {
+.content .org-logo {
   display: none;
 }
 @media screen and (min-width: 768px) {
-  .content .philhealth-logo {
+  .content .org-logo {
     display: block;
     height: 60px;
     margin: 30px auto 10px auto;
     width: 163.887px;
   }
 }
-.content .philhealth-logo img {
+.content .org-logo img {
   height: 100%;
 }
