@@ -1,4 +1,4 @@
-# 👨🏻‍💻 Web Development Prject
+# 👨🏻‍💻 Web Development Project
 
 ## Disclaimer
 
