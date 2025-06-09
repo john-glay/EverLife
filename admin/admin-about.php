@@ -61,10 +61,10 @@
                             <p class="last-name">Alfaro,</p>
                             <p>Abram S.</p>
                             <div class="member-socials">
-                                <a href="" target="_blank"><i class="bi bi-github"></i></a>
+                                <a href="https://github.com/ram4209" target="_blank"><i class="bi bi-github"></i></a>
                                 <a href="" target="_blank"><i class="bi bi-linkedin"></i></a>
                             </div>
-                            <img class="member-img" src="../images/glay.png" alt="abram" draggable="false">
+                            <img class="member-img" src="../images/abram.png" alt="abram" draggable="false">
                         </div>
                         <div class="member">
                             <p class="last-name">Bunao,</p>
@@ -79,28 +79,28 @@
                             <p class="last-name">Damaso,</p>
                             <p>Edriana Joy R.</p>
                             <div class="member-socials">
-                                <a href="" target="_blank"><i class="bi bi-github"></i></a>
-                                <a href="" target="_blank"><i class="bi bi-linkedin"></i></a>
+                                <a href="https://github.com/EdrianaJoy" target="_blank"><i class="bi bi-github"></i></a>
+                                <a href="https://www.linkedin.com/in/edriana-joy-damaso-b7b238240/" target="_blank"><i class="bi bi-linkedin"></i></a>
                             </div>
-                            <img class="member-img" src="../images/glay.png" alt="edriana" draggable="false">
+                            <img class="member-img" src="../images/edriana.png" alt="edriana" draggable="false">
                         </div>
                         <div class="member">
                             <p class="last-name">Dela Cruz</p>
                             <p>Jhana Mae L.</p>
                             <div class="member-socials">
-                                <a href="" target="_blank"><i class="bi bi-github"></i></a>
-                                <a href="" target="_blank"><i class="bi bi-linkedin"></i></a>
+                                <a href="https://github.com/jhanaMae" target="_blank"><i class="bi bi-github"></i></a>
+                                <a href="https://www.linkedin.com/in/jhana-mae-dela-cruz-a36490254/" target="_blank"><i class="bi bi-linkedin"></i></a>
                             </div>
-                            <img class="member-img" src="../images/glay.png" alt="jhana" draggable="false">
+                            <img class="member-img" src="../images/jhana.png" alt="jhana" draggable="false">
                         </div>
                         <div class="member">
                             <p class="last-name">Estrella</p>
                             <p>Novelle Lyn</p>
                             <div class="member-socials">
-                                <a href="" target="_blank"><i class="bi bi-github"></i></a>
-                                <a href="" target="_blank"><i class="bi bi-linkedin"></i></a>
+                                <a href="https://github.com/NovelleEstrella" target="_blank"><i class="bi bi-github"></i></a>
+                                <a href="https://www.linkedin.com/in/novelleestrella/" target="_blank"><i class="bi bi-linkedin"></i></a>
                             </div>
-                            <img class="member-img" src="../images/glay.png" alt="novelle" draggable="false">
+                            <img class="member-img" src="../images/novelle.png" alt="novelle" draggable="false">
                         </div>
                     </div>
                 </section>
