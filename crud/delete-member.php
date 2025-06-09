@@ -5,17 +5,17 @@
         $servername = "localhost";
         $username = "root";
         $password = "";
-        $database = "philhealth";
+        $database = "everlife";
 
         // Create connection
         $connection = new mysqli( $servername, $username, $password, $database );
 
         // Delete member
-        $members = "DELETE FROM member WHERE pin=$pin";
+        $members = "DELETE FROM members WHERE pin=$pin";
         $result = $connection->query( $members );
 
         // Delete dependents
-        $dependents = "DELETE FROM dependent WHERE pin=$pin";
+        $dependents = "DELETE FROM dependents WHERE pin=$pin";
         $result = $connection->query( $dependents );
     }
 

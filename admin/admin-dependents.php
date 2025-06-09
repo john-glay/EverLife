@@ -4,7 +4,7 @@ session_start();
 $servername = "localhost";
 $username = "root";
 $password = "";
-$database = "philhealth";
+$database = "everlife";
 
 // Create connection
 $connection = new mysqli( $servername, $username, $password, $database );
@@ -33,7 +33,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $pin = $_POST['pin'];
     
         // Prepare and execute the query
-        $sql = "SELECT * FROM member WHERE pin = $pin";
+        $sql = "SELECT * FROM members WHERE pin = $pin";
         $result = $connection->query($sql);
     
         if ($row = $result->fetch_assoc()) {
@@ -106,7 +106,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         } 
     
         // Prepare and execute the query
-        $sql = "SELECT * FROM dependent WHERE pin = $pin";
+        $sql = "SELECT * FROM dependents WHERE pin = $pin";
         $result = $connection->query($sql);
         
         if ($result->num_rows > 0) {
@@ -135,7 +135,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         }
     
         // Prepare and execute the query
-        $sql = "SELECT * FROM member WHERE pin = $pin";
+        $sql = "SELECT * FROM members WHERE pin = $pin";
         $result = $connection->query($sql);
     
         if ($row = $result->fetch_assoc()) {
@@ -185,7 +185,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         $dep_id = $_POST['delete'];
 
         // Prepare and execute the query
-        $sql = "SELECT * FROM dependent WHERE dep_id = $dep_id";
+        $sql = "SELECT * FROM dependents WHERE dep_id = $dep_id";
         $result = $connection->query($sql);
 
         if ($row = $result->fetch_assoc()) {
@@ -231,7 +231,7 @@ $dep_sort = isset($_SESSION['dep_sort']) ? $_SESSION['dep_sort'] : '';
 $servername = "localhost";
 $username = "root";
 $password = "";
-$database = "philhealth";
+$database = "everlife";
 
 // Create connection
 $connection = new mysqli($servername, $username, $password, $database);
@@ -242,7 +242,7 @@ if ($connection->connect_error) {
 }
 
 // Initialize the base query
-$count = "SELECT count(*) AS total_count FROM dependent WHERE 1=1";
+$count = "SELECT count(*) AS total_count FROM dependents WHERE 1=1";
 
 // Append conditions based on the input
 if (!empty($dep_keyword)) {
@@ -404,7 +404,7 @@ $total_count = $result->fetch_assoc()['total_count'];
                         $servername = "localhost";
                         $username = "root";
                         $password = "";
-                        $database = "philhealth";
+                        $database = "everlife";
 
                         // Create connection
                         $connection = new mysqli($servername, $username, $password, $database);
@@ -415,7 +415,7 @@ $total_count = $result->fetch_assoc()['total_count'];
                         }
 
                         // Initialize the base query
-                        $sql = "SELECT * FROM dependent WHERE 1=1";
+                        $sql = "SELECT * FROM dependents WHERE 1=1";
 
                         // Append conditions based on the input
                         if (!empty($dep_keyword)) {

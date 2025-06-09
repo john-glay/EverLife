@@ -2,7 +2,7 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$database = "philhealth";
+$database = "everlife";
 
 // Create connection
 $connection = new mysqli( $servername, $username, $password, $database );
@@ -48,7 +48,7 @@ if ( $_SERVER['REQUEST_METHOD'] == 'GET' ) {
     $pin = $_GET["pin"];
 
     // Read data
-    $sql = "SELECT * FROM member WHERE pin = $pin";
+    $sql = "SELECT * FROM members WHERE pin = $pin";
     $result = $connection->query( $sql );
     $row = $result->fetch_assoc();
 
@@ -141,7 +141,7 @@ if ( $_SERVER['REQUEST_METHOD'] == 'GET' ) {
             $disability = htmlspecialchars($dependent['disability']);
             $relationship = htmlspecialchars($dependent['relationship']);
 
-            $sqlDependents =    "INSERT INTO dependent (pin, dep_name, dep_birth_date, dep_citizenship, dep_perm_disability, relationship) " . 
+            $sqlDependents =    "INSERT INTO dependents (pin, dep_name, dep_birth_date, dep_citizenship, dep_perm_disability, relationship) " . 
                                 "VALUES ('$pin', '$dep_name', '$dep_birthdate', '$dep_citizenship', '$disability', '$relationship')";
             
             $dep_result = $connection->query($sqlDependents);
@@ -150,7 +150,7 @@ if ( $_SERVER['REQUEST_METHOD'] == 'GET' ) {
 
     do {
         // Add new client to database
-        $sqlMembers =   "UPDATE member " . 
+        $sqlMembers =   "UPDATE members " . 
                         "SET name = '$name', mother_mdn_name = '$mother_mdn_name', spouse = '$spouse', birth_date = '$birth_date', birth_place = '$birth_place', sex = '$sex', civil_status = '$civil_status', citizenship = '$citizenship', philsys_id_no = '$philsys_id_no', tin = '$tin', perm_adrs = '$perm_adrs', mailing_adrs = '$mailing_adrs', home_phone_no = '$home_phone_no', mobile_no = '$mobile_no', business_directline = '$business_directline', email = '$email', contributor = '$contributor', contributor_type = '$contributor_type', pra_srrv_no = '$pra_srrv_no', acr_icard_no = '$acr_icard_no', pwd_id_no = '$pwd_id_no', profession = '$profession', monthly_income = '$monthly_income', income_proof = '$income_proof' " . 
                         "WHERE pin = $pin";
         $result = $connection->query( $sqlMembers );

@@ -37,9 +37,9 @@
                 <p class='m-0'>Incorrect username or password.</p>
             </div>
             <label class="auth-label d-block">Username<small>&nbsp;*</small></label>
-            <input type="text" class="input-form" name="username" placeholder="admin" required>
+            <input type="text" class="input-form" name="username" placeholder="Enter username" required>
             <label class="auth-label d-block">Password<small>&nbsp;*</small></label>
-            <input type="password" class="input-form" name="password" placeholder="admin" required>
+            <input type="password" class="input-form" name="password" placeholder="Enter password" required>
             <div class="auth-buttons">
                 <button type="button" class="clear-btn" onclick="window.location.href='index.php';">Cancel</button>
                 <button type="submit" class="submit-btn">Log in</button>

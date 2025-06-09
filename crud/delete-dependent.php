@@ -5,13 +5,13 @@
         $servername = "localhost";
         $username = "root";
         $password = "";
-        $database = "philhealth";
+        $database = "everlife";
 
         // Create connection
         $connection = new mysqli( $servername, $username, $password, $database );
 
         // Delete dependents
-        $dependents = "DELETE FROM dependent WHERE dep_id=$dep_id";
+        $dependents = "DELETE FROM dependents WHERE dep_id=$dep_id";
         $result = $connection->query( $dependents );
     }
 

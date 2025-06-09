@@ -2,7 +2,7 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$database = "philhealth";
+$database = "everlife";
 
 // Create connection
 $connection = new mysqli( $servername, $username, $password, $database );
@@ -25,7 +25,7 @@ if ( $_SERVER['REQUEST_METHOD'] == 'GET' ) {
     $dep_id = $_GET["dep_id"];
 
     // Read data
-    $sql = "SELECT * FROM dependent WHERE dep_id = $dep_id";
+    $sql = "SELECT * FROM dependents WHERE dep_id = $dep_id";
     $result = $connection->query( $sql );
     $row = $result->fetch_assoc();
 
@@ -51,7 +51,7 @@ if ( $_SERVER['REQUEST_METHOD'] == 'GET' ) {
 
     do {
         // Add new client to database
-        $sqlDependents= "UPDATE dependent " . 
+        $sqlDependents= "UPDATE dependents " . 
                         "SET dep_name = '$dep_name', dep_birth_date = '$dep_birth_date', dep_citizenship = '$dep_citizenship', dep_perm_disability = '$dep_perm_disability', relationship = '$relationship' " . 
                         "WHERE dep_id = $dep_id";
         $result = $connection->query( $sqlDependents );

@@ -2,7 +2,7 @@
 $servername = "localhost";
 $username = "root";
 $password = "";
-$database = "philhealth";
+$database = "everlife";
 
 // Create connection
 $connection = new mysqli( $servername, $username, $password, $database );
@@ -83,7 +83,7 @@ if ( $_SERVER['REQUEST_METHOD'] == 'POST' ) {
     }
     
     $pin = random12DigitInteger();
-    $dbpin = "SELECT pin FROM member";
+    $dbpin = "SELECT pin FROM members";
     $result = $connection->query($dbpin);
 
     // Read data of each row
@@ -102,7 +102,7 @@ if ( $_SERVER['REQUEST_METHOD'] == 'POST' ) {
             $disability = htmlspecialchars($dependent['disability']);
             $relationship = htmlspecialchars($dependent['relationship']);
     
-            $sqlDependents =    "INSERT INTO dependent (pin, dep_name, dep_birth_date, dep_citizenship, dep_perm_disability, relationship) " .
+            $sqlDependents =    "INSERT INTO dependents (pin, dep_name, dep_birth_date, dep_citizenship, dep_perm_disability, relationship) " .
                                 "VALUES ('$pin', '$dep_name', '$dep_birthdate', '$dep_citizenship', '$disability', '$relationship')";
     
             $dep_result = $connection->query($sqlDependents);
@@ -111,7 +111,7 @@ if ( $_SERVER['REQUEST_METHOD'] == 'POST' ) {
 
     do {
         // Add new client to database
-        $sqlMembers =   "INSERT INTO member (pin, name, mother_mdn_name, spouse, birth_date, birth_place, sex, civil_status, citizenship, philsys_id_no, tin, perm_adrs, mailing_adrs, home_phone_no, mobile_no, business_directline,  email, contributor, contributor_type, pra_srrv_no, acr_icard_no, pwd_id_no, profession, monthly_income, income_proof) " . 
+        $sqlMembers =   "INSERT INTO members (pin, name, mother_mdn_name, spouse, birth_date, birth_place, sex, civil_status, citizenship, philsys_id_no, tin, perm_adrs, mailing_adrs, home_phone_no, mobile_no, business_directline,  email, contributor, contributor_type, pra_srrv_no, acr_icard_no, pwd_id_no, profession, monthly_income, income_proof) " . 
                         "VALUES ('$pin', '$name', '$mother_mdn_name', '$spouse', '$birth_date', '$birth_place', '$sex', '$civil_status', '$citizenship', '$philsys_id_no', '$tin', '$perm_adrs', '$mailing_adrs', '$home_phone_no', '$mobile_no', '$business_directline', '$email', '$contributor', '$contributor_type', '$pra_srrv_no', '$acr_icard_no', '$pwd_id_no', '$profession', '$monthly_income', '$income_proof')";
                         
         $member_result = $connection->query($sqlMembers);
